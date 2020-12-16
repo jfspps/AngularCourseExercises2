@@ -6,6 +6,10 @@
       </app-gamecontrol>
       <hr>
       <p>The current count is {{ appCount}}</p>
+      <hr>
+      <app-even [currentEven]="appCount"></app-even>
+      <hr>
+      <app-odd [currentOdd]="appCount"></app-odd>
     </div>
   </div>
 </div>
