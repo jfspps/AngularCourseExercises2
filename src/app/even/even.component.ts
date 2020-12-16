@@ -7,8 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EvenComponent implements OnInit {
 
+  // this might complain if tsconfig.json's "strict": true
   @Input() currentEven: number;
-  
+
   constructor() {
    }
 

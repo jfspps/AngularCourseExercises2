@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OddComponent implements OnInit {
 
+  // this might complain if tsconfig.json's "strict": true
   @Input() currentOdd: number;
 
   constructor() { }

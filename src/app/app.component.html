@@ -7,9 +7,9 @@
       <hr>
       <p>The current count is {{ appCount}}</p>
       <hr>
-      <app-even [currentEven]="appCount"></app-even>
+      <app-even *ngIf="appCount%2 === 0" [currentEven]="appCount"></app-even>
       <hr>
-      <app-odd [currentOdd]="appCount"></app-odd>
+      <app-odd *ngIf="appCount%2 != 0" [currentOdd]="appCount"></app-odd>
     </div>
   </div>
 </div>
