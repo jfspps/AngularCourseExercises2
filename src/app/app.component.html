@@ -6,9 +6,9 @@
       </app-gamecontrol>
       <hr>
       <p>The current count is {{ appCount}}</p>
-      <hr>
+      <hr *ngIf="appCount%2 === 0">
       <app-even *ngIf="appCount%2 === 0" [currentEven]="appCount"></app-even>
-      <hr>
+      <hr *ngIf="appCount%2 != 0">
       <app-odd *ngIf="appCount%2 != 0" [currentOdd]="appCount"></app-odd>
     </div>
   </div>
