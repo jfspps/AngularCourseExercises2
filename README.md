@@ -1,8 +1,8 @@
-# AngularDatabindingExercise
+# Angular Data-binding exercise
 
-This project shows how to implment databinding, between a child and parent component using `[property_name]`.
+This project shows how to implment data-binding and event-binding, between a child and parent component using `[property_name]`.
 
-In detail, the `game-control` component starts a timer using `setInterval()` to emit a value `currentCount`. The start and stop processes are handled by `game-control`'s template. The parent appComponent then stores the value ass `appCount`. The value is then bound (one-way) to child components `even` or `odd` , regardless of the value, using `@Input` and `[currentEven]="appCount"` and `[currentOdd]="appCount"`. The template of both `even` and `odd` components determines how the values the displayed and the appComponent template determines when (via an ngIf directive) they are displayed.
+In detail, the `game-control` component starts a timer using `setInterval()` to emit a value `outputCount`. The start and stop processes are handled by `game-control`'s template. The parent appComponent then stores the value as `appCount`, through event binding, `(outputCount)="onCountChange($event)"`. The appComponent's `appCount` value is then bound (one-way) to child components `even` or `odd` , regardless of its value, using `@Input` and `[currentEven]="appCount"` and `[currentOdd]="appCount"`. The template of both `even` and `odd` components determines how the values the displayed and the appComponent template determines when (via an ngIf directive) they are displayed.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
 
